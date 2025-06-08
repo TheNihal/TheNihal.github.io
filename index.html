@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What's Up</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .glow {
+      font-size: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ff004f;
+      text-shadow:
+        0 0 5px #ff004f,
+        0 0 10px #ff004f,
+        0 0 20px #ff004f,
+        0 0 40px #ff004f;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow">What's up<br>motherfuckers</div>
+</body>
+</html>
